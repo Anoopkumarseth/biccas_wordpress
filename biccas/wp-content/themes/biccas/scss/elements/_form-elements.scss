@@ -1,0 +1,19 @@
+input,
+select,
+optgroup,
+textarea{
+    border-radius: var(--border-radius);
+    padding: 8px 15px;
+    display: block;
+    width: 100%;
+}
+
+label{
+    color: var(--label-color);
+}
+
+textarea{
+    resize: vertical;
+}
+
+

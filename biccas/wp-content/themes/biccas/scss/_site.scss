@@ -1,0 +1,309 @@
+.site_hero-img img {
+    filter: drop-shadow(var(--box-shadow));
+}
+
+.collab_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    .item {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 5px;
+        img {
+            width: 100%;
+            height: 50px;
+            object-fit: contain;
+        }
+        &:hover {
+            filter: drop-shadow(var(--box-shadow));
+        }
+    }
+}
+
+.support_types {
+    --heading-margin: 0 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    .wp-block-media-text__media {
+        height: 60px;
+        width: 60px;
+        background: #fff;
+        padding: 15px;
+        box-shadow: var(--box-shadow);
+    }
+    .wp-block-media-text__media {
+        align-self: start !important;
+    }
+    .wp-block-media-text {
+        flex-grow: 1;
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    .wp-block-media-text__content {
+        padding: 0 !important;
+    }
+}
+
+.rating_wrapper {
+    display: flex;
+    .item:not(:last-child) {
+        margin-right: 80px;
+    }
+    .textual-ratings {
+        color: var(--dark-color);
+        margin-bottom: 5px;
+    }
+}
+
+.star_rating_list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    li {
+        margin-bottom: 10px;
+        height: 26px;
+        width: 26px;
+        display: block;
+        background: url(../images/icons/star-blank.svg) no-repeat center;
+        &.active {
+            background: url(../images/icons/star-fill.svg) no-repeat center;
+        }
+    }
+}
+
+.our_feats {
+    .text_cta {
+        display: flex;
+        align-items: center;
+        p {
+            margin-inline: 130px;
+        }
+    }
+}
+
+.feats_card .wp-block-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+        margin-bottom: 10px;
+    }
+    .wp-block-image img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .wp-block-image {
+        margin-bottom: 1.875rem;
+    }
+}
+
+.benefit_items {
+    --heading-margin: 0 0 50px 0;
+}
+
+.contact_form {
+    padding: 40px 80px;
+    border-radius: var(--border-radius--outer);
+    position: relative;
+    .btn {
+        height: 60px;
+    }
+}
+
+.trial_text {
+    text-align: right;
+    position: absolute;
+    display: inline-block;
+    right: 80px;
+    font-size: 0.875rem;
+    margin-top: 5px;
+    a {
+        display: inline-block;
+    }
+}
+
+.testimonials_wrapper_outer {
+    position: relative;
+    margin-top: 40px;
+    &::before {
+        content: "";
+        background: url(../images/icons/icon-quote.svg) no-repeat center;
+        background-size: contain;
+        width: 45px;
+        height: 38px;
+        display: block;
+        margin-bottom: 40px;
+    }
+    .testimonial_text {
+        margin-bottom: 40px;
+    }
+}
+
+.testimonials_wrapper--thumbs {
+    margin-top: 40px !important;
+    .item {
+        height: 65px;
+        width: 65px !important;
+        overflow: hidden;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.do_with_wrap {
+    padding-right: 80px;
+}
+
+.pricing-wrapper {
+    display: flex;
+    align-items: center;
+    .item {
+        width: 33.3337%;
+        flex: 0 0 auto;
+        padding: 15px;
+    }
+    .plan_box {
+        box-shadow: var(--box-shadow);
+        padding: 40px 20px 20px;
+        border-radius: var(--border-radius--outer);
+        text-align: center;
+        background: var(--light-color);
+    }
+    .checklist {
+        margin-bottom: 30px;
+        text-align: initial;
+    }
+    .focus_box {
+        padding: 25px 40px;
+        background: var(--gray-bg-color);
+        border-radius: var(--border-radius);
+    }
+
+    .wp-block-buttons > .wp-block-button {
+        margin: 0 auto;
+        min-width: 200px;
+        max-width: 100%;
+        .wp-block-button__link {
+            width: 100%;
+        }
+    }
+
+    .plan_price {
+        @extend h2;
+        margin-bottom: 20px;
+        &::before {
+            content: "$";
+            font-size: var(--font-size);
+            font-weight: var(--font-weight);
+            transform: translateY(-25px);
+            display: inline-block;
+            color: var(--content-color);
+        }
+    }
+
+    .plan_offer_btn {
+        margin-bottom: 15px !important;
+    }
+
+    .item.Pro {
+        position: relative;
+        order: 1;
+        .plan_body {
+            position: relative;
+            z-index: 9;
+        }
+        .plan_box::after {
+            content: "";
+            height: 600px;
+            width: 600px;
+            display: block;
+            position: absolute;
+            bottom: -140px;
+            transform: scale(1.5);
+            margin: auto;
+            left: 100%;
+            right: 0;
+            margin-right: -20%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+        .plan_box {
+            --content-color: var(--light-color);
+            position: relative;
+            overflow: hidden;
+            p {
+                color: var(--light-color);
+            }
+            @extend .dark-bg-color;
+            background-color: var(--primary-color);
+        }
+
+        .light-btn .wp-block-button__link {
+            color: var(--light-color) !important;
+            background: var(--primary-color) !important;
+        }
+    }
+    .item.Business {
+        order: 2;
+    }
+
+    .plan_body > p {
+        max-width: calc(100% - 100px);
+        margin-inline: auto;
+    }
+    .plan_offer_btn a {
+        background: rgba(255, 255, 255, 0.1) !important;
+        padding: 7px 16px;
+        width: unset;
+    }
+}
+
+.tabs {
+    .tab-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        margin-bottom: 80px;
+        padding: 0;
+        width: max-content;
+        margin-inline: auto;
+        box-shadow: var(--box-shadow);
+        padding: 7px;
+        border-radius: var(--border-radius--outer);
+        li {
+            margin-bottom: 0 !important;
+        }
+        .tab-link {
+            display: block;
+            padding: 7px 15px;
+            text-decoration: none;
+            border-bottom: 3px solid transparent;
+            &.active {
+                @extend .btn;
+                &:hover{
+                    transform: none;
+                }
+            }
+        }
+    }
+    .tab-content {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+}

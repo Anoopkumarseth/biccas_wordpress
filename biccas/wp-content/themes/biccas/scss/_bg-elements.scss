@@ -1,0 +1,36 @@
+.blurred_circle {
+    position: absolute;
+    width: 634px;
+    height: 634px;
+    filter: blur(1000px);
+    background: var(--primary-color);
+    display: block;
+    border-radius: 50%;
+    max-width: 100%;
+    transition: all .3s ease-in-out;
+    pointer-events: none;
+}
+
+.site-header {
+    .blurred_circle {
+        transform: translate(-50%, -50%);
+    }
+}
+
+.site_hero {
+    overflow: hidden;
+    .blurred_circle {
+        border-radius: 50% 0 0 50%;
+        right: 0;
+    }
+}
+
+.plan_selector_outer {
+    .blurred_circle {
+        border-radius: 50% 0 0 50%;
+        right: 0;
+    }
+    .content {
+        position: relative;
+    }
+}

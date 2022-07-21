@@ -1,0 +1,108 @@
+.site-footer {
+    li {
+        list-style: none;
+    }
+    .wp-block-tnp-minimal {
+        padding: 0 !important;
+    }
+    .tnp-subscription-minimal {
+        width: 100%;
+        box-sizing: border-box;
+        border: 2px solid;
+        border-radius: var(--border-radius--pills);
+        overflow: hidden;
+        position: relative;
+        padding: 5px;
+    }
+    .tnp-subscription-minimal .tnp-submit {
+        height: 46px;
+        width: 46px;
+        max-width: 46px;
+        overflow: hidden;
+        text-indent: -99999px;
+        border-radius: var(--border-radius--pills) !important;
+        background: var(--primary-color) url(../images/icons/icon-arrow-right.svg) no-repeat center !important;
+        cursor: pointer;
+        flex: 0 0 auto;
+        transition: all .3s ease-in-out;
+        &:hover{
+            background-position: center right 9px !important;
+        }
+    }
+    .tnp-email {
+        background: transparent !important;
+        border: 0 !important;
+        padding: 15px !important;
+        width: 100% !important;
+        outline: 0 !important;
+        color: inherit !important;
+        max-width: unset !important;
+    }
+    .tnp-subscription-minimal form {
+        display: flex;
+        align-items: center;
+    }
+
+    .widget-title {
+        color: var(--light-color);
+        margin-bottom: 30px;
+    }
+    .menu {
+        li:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        a {
+            color: var(--content-color);
+        }
+    }
+
+    .copyright-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: 45px 25px;
+        .menu {
+            display: flex;
+            li {
+                padding-right: 10px;
+                position: relative;
+                &::after {
+                    content: "";
+                    height: 5px;
+                    width: 5px;
+                    display: inline-block;
+                    background: var(--content-color);
+                    border-radius: var(--border-radius--pills);
+                    position: relative;
+                    top: -5px;
+                    margin-left: 10px;
+                }
+                &:last-child::after{
+                    display: none;
+                }
+            }
+            a{
+                color: var(--light-color);
+            }
+        }
+    }
+
+
+    .wp-row {
+        display: flex;
+        .col{
+            flex-grow: 1;
+            padding-inline: 40px;
+        }
+    }
+    
+    .first-container{
+        max-width: 40%;
+        padding-left: 0 !important;
+        padding-right: 130px !important;
+        &+.col{
+            padding-right: 0 !important;
+        }
+    }
+
+}

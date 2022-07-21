@@ -1,0 +1,15 @@
+.gray-bg-color{
+    background-color: var(--gray-bg-color);
+}
+.dark-bg-color{
+    --heading-color:var(--light-color);
+    --label-color:var(--light-color);
+    background-color: var(--dark-bg-color); 
+}
+.dark-v2-bg-color{
+    background-color: var(--dark-v2-bg-color);    
+}
+
+.box-shadow{
+    box-shadow: var(--box-shadow);
+}

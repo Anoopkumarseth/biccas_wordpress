@@ -1,0 +1,60 @@
+:root{
+    // colors
+    --primary-color: #54BD95;
+    --heading-color: #191A15;
+    --content-color: #A6A6A6;
+    --light-color: #fff;
+    --dark-color: #161C28;
+    --nav-link-color: var(--content-color);
+    --label-color: var(--dark-color);
+    --nav-link--active-color: #000000;
+    --gray-bg-color: #F9F8FE;
+    --dark-bg-color: var(--dark-color);
+    --dark-v2-bg-color: #222938;
+    // sizes
+    --font-family: 'Inter', sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-size: 1.125rem; //18px
+    --font-size--nav: 1rem; //16px
+    --font-weight: 500; 
+    --font-weight--semibold: 600; 
+    --font-weight--bold: 700; 
+    --line-height: 1.66;
+    --line-height--heading: 1.125;
+    --h1-size: 5rem;    // 80px
+    --h2-size: 3.125rem; // 50px
+    --h3-size: 1.75rem; // 28px
+    // others
+    --btn-padding:20px 30px;
+    --heading-margin: 0 0 20px 0;
+    --border-radius: 0.625rem; // 10px
+    --border-radius--outer: 1.25rem; // 20px
+    --border-radius--pills: 4.375rem; // 70px
+    --box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.05);
+    --page-section-padding: 130px;
+    --page-compact-section-padding: 60px;
+}
+// base styles
+@import 'common';
+@import 'breakpoints';
+@import 'typography';
+@import 'grid';
+
+
+// elements
+@import 'elements/button';
+@import 'elements/form-elements';
+@import 'elements/list';
+@import 'elements/icons';
+@import 'elements/var_classes';
+
+// site components
+@import 'header';
+@import 'footer';
+
+
+// site artifacts
+@import 'bg-elements';
+
+// site styles
+@import 'site';
+@import 'common-responsive';

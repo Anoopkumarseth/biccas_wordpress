@@ -1,0 +1,63 @@
+.btn, button{
+    background: var(--primary-color);
+    color: var(--light-color) !important;
+    padding: 8px 15px !important;
+    border-radius: var(--border-radius);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    &-block{
+        width: 100%;
+    }
+    &:hover{
+        box-shadow: var(--box-shadow);
+        transform: translateY(-2px);
+    }
+}
+
+
+
+// wordpress button modified
+.wp-block-buttons .wp-block-button__link{
+    background-color:var(--primary-color) !important;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    transition: all .3s ease-in-out;
+    &:hover{
+        box-shadow: var(--box-shadow);
+        transform: translateY(-2px);
+    }
+}
+
+.is-style-outline .wp-block-button__link{
+    background-color:var(--light-color) !important;
+    border-color:var(--primary-color) !important;
+    color:var(--primary-color) !important
+}
+
+.play-view-btn .wp-block-button__link{
+    border: 0 !important;
+    background: transparent !important;
+    color: var(--dark-color) !important;
+    display: flex;
+    align-items: center;
+    &::before{
+        content: '';
+        height: 50px;
+        width: 50px;
+        position: relative;
+        display: inline-block;
+        background: url(../images/icons/icon-play.svg) no-repeat center;
+    }
+}
+
+.light-btn .wp-block-button__link{
+    background: var(--light-color) !important;
+    color: var(--primary-color) !important;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
