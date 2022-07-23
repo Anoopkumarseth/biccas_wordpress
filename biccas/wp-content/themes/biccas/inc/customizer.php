@@ -1,6 +1,6 @@
 <?php
 
-function wpb_customize_register($wp_customize){
+function biccas_customize_register($wp_customize){
     // Showcase Section
     $wp_customize->add_section('theme_options', array(
         'title'   => __('Theme Options', 'Biccas'),
@@ -11,7 +11,7 @@ function wpb_customize_register($wp_customize){
 
     // image
     $wp_customize->add_setting('footer_logo', array(
-        'default'   => get_bloginfo('template_directory').'/img/showcase.jpg',
+        'default'   => get_bloginfo('template_directory').'/img/logo.jpg',
         'type'      => 'theme_mod'
     ));
 
@@ -35,4 +35,4 @@ function wpb_customize_register($wp_customize){
       ));
       
 }
-add_action('customize_register', 'wpb_customize_register');
+add_action('customize_register', 'biccas_customize_register');
